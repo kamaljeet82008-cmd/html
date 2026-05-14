@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form with Validation</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Full Name -->
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name" required minlength="3">
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" required minlength="6">
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" placeholder="Enter valid email" required>
+        <br><br>
+
+        <!-- Age -->
+        <label>Age:</label>
+        <input type="number" min="18" max="60" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter 10 digit number" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <!-- Website -->
+        <label>Website:</label>
+        <input type="url" placeholder="https://example.com">
+        <br><br>
+
+        <!-- Search -->
+        <label>Search:</label>
+        <input type="search" placeholder="Search here">
+        <br><br>
+
+        <!-- Date -->
+        <label>Date of Birth:</label>
+        <input type="date" required>
+        <br><br>
+
+        <!-- Time -->
+        <label>Preferred Time:</label>
+        <input type="time" required>
+        <br><br>
+
+        <!-- Datetime -->
+        <label>Meeting Date & Time:</label>
+        <input type="datetime-local">
+        <br><br>
+
+        <!-- Color -->
+        <label>Favorite Color:</label>
+        <input type="color">
+        <br><br>
+
+        <!-- Range -->
+        <label>Volume:</label>
+        <input type="range" min="0" max="100">
+        <br><br>
+
+        <!-- Radio -->
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" required> Male
+
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>Hobbies:</label>
+
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Music
+        <input type="checkbox"> Sports
+        <br><br>
+
+        <!-- File -->
+        <label>Upload Resume:</label>
+        <input type="file" required>
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Address:</label><br>
+
+        <textarea rows="4" cols="30" required minlength="10" placeholder="Enter your address">
+</textarea>
+        <br><br>
+
+        <!-- Select -->
+        <label>Country:</label>
+
+        <select required>
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>Canada</option>
+            <option>USA</option>
+        </select>
+        <br><br>
+
+        <!-- Datalist -->
+        <label>Choose Browser:</label>
+
+        <input list="browsers" required>
+
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+        </datalist>
+        <br><br>
+
+        <!-- Hidden -->
+        <input type="hidden" value="hiddenData">
+
+        <!-- Buttons -->
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+        <input type="button" value="Click Me">
+
+    </form>
+
+</body>
+
+</html>

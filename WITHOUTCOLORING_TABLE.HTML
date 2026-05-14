@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advanced HTML Table</title>
+</head>
+
+<body>
+
+    <table border="2" cellpadding="10" cellspacing="5" width="80%" align="center">
+
+        <!-- Table Caption -->
+        <caption>
+            <h2>Student Management Table</h2>
+        </caption>
+
+        <!-- Table Header -->
+        <thead>
+
+            <tr>
+
+                <th rowspan="2">ID</th>
+
+                <th rowspan="2">Student Name</th>
+
+                <th colspan="2">Course Details</th>
+
+                <th rowspan="2">Marks</th>
+
+                <th rowspan="2">Grade</th>
+
+            </tr>
+
+            <tr>
+
+                <th>Course</th>
+
+                <th>Branch</th>
+
+            </tr>
+
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+
+            <tr align="center">
+
+                <td>101</td>
+
+                <td>Kamaljeet</td>
+
+                <td>B.Tech</td>
+
+                <td>CSE</td>
+
+                <td>92</td>
+
+                <td>A+</td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td>102</td>
+
+                <td>Rahul</td>
+
+                <td>BCA</td>
+
+                <td>IT</td>
+
+                <td>85</td>
+
+                <td>A</td>
+
+            </tr>
+
+            <!-- Rowspan Example -->
+            <tr align="center">
+
+                <td rowspan="2">103</td>
+
+                <td rowspan="2">Simran</td>
+
+                <td>MCA</td>
+
+                <td>AI</td>
+
+                <td>89</td>
+
+                <td>A</td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td>MCA</td>
+
+                <td>ML</td>
+
+                <td>91</td>
+
+                <td>A+</td>
+
+            </tr>
+
+            <!-- Colspan Example -->
+            <tr>
+
+                <td colspan="6" align="center">
+
+                    Scholarship Students List
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+
+            <tr>
+
+                <td colspan="4" align="center">
+
+                    Total Students
+
+                </td>
+
+                <td colspan="2" align="center">
+
+                    3
+
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
